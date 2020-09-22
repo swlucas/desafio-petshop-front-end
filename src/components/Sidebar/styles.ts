@@ -45,8 +45,11 @@ export const Button = styled.button`
 
   img {
     margin-bottom: 10px;
-    filter: brightness(
-      ${(props: ButtonProps) => (!props.active ? '50%' : '100%')}
-    );
+    /* filter: brightness(
+      ${(props: ButtonProps) =>
+      !props.active ? '50%' : '100%'}
+    ); */
+    filter: invert(44%) sepia(80%) saturate(456%) hue-rotate(116deg)
+      brightness(93%) contrast(100%);
   }
 `;

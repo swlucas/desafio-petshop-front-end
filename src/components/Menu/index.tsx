@@ -1,8 +1,9 @@
 import React from 'react';
 import SideBar from '../Sidebar';
 import Header from '../Header';
+import Links from '../Link';
 
-import { Container, BodyContainer } from './styles';
+import { Container, BodyContainer, Body } from './styles';
 
 interface Props {
   children: JSX.Element[] | JSX.Element;
@@ -13,7 +14,10 @@ const Menu = ({ children }: Props) => (
     <SideBar />
     <BodyContainer>
       <Header />
-      {children}
+      <Body>
+        <Links />
+        {children}
+      </Body>
     </BodyContainer>
   </Container>
 );

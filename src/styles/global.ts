@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import colors from './colors';
 
 export default createGlobalStyle`
 * {
@@ -19,7 +20,7 @@ export default createGlobalStyle`
 }
 
 body {
-  background:#F5F7FA;
+  background: ${colors.grayLigth};
   -webkit-font-smoothing: antialiased;
 }
 
@@ -27,7 +28,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+/* button:hover {
   opacity: 0.5;
-}
+} */
 `;
